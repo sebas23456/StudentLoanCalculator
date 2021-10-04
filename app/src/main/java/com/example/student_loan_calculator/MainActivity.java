@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         double r = (interestRate)/(100);
         double r1 = 1 + r;
 
-        double TotalInterest = (loanAmount * r1);
+        double TotalInterest = (loanAmount * r);
         String printableTotalInterest = new Double(TotalInterest).toString();
         mTotalInterestTextView.setText(printableTotalInterest);
 
