@@ -25,23 +25,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void doMathWithLoanFee() {
-        double loanAmount = Integer.parseInt(mPrincipleInput.getText().toString()) * 1.05;
+       double loanAmount = Integer.parseInt(mPrincipleInput.getText().toString()) * 1.05;
         double interestRate = Integer.parseInt(mLoanPercentage.getText().toString());
         double loanLengthInYears = Integer.parseInt(mYearsBorrowed.getText().toString());
 
         double r = (interestRate)/(100);
         double r1 = 1 + r;
 
-        double TotalInterest = (loanAmount * r);
-        String printableTotalInterest = new Double(TotalInterest).toString();
-        mTotalInterestTextView.setText(printableTotalInterest);
-
         double r2 = Math.pow(r1,loanLengthInYears);
+        double totalPayment = loanAmount*r2;
         double numberOfPayments = loanLengthInYears * 12;
 
-        double monthlyPayment = (loanAmount*r2)/(numberOfPayments);
+        double monthlyPayment = (totalPayment)/(numberOfPayments);
         String printableMonthlyPayment = new Double(monthlyPayment).toString();
         mMonthlyPaymentOutput.setText(printableMonthlyPayment);
+
+        double totalInterestPayment = totalPayment-loanAmount;
+        String printableTotalInterest = new Double(totalInterestPayment).toString();
+        mTotalInterestTextView.setText(printableTotalInterest);
     }
 
 
