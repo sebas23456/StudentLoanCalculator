@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_app_title"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        android:layout_gravity="center"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_function"
+        android:textSize="16dp"
+        android:textAppearance="@color/black"
+        android:layout_gravity="center"
+        android:layout_alignParentTop = "true"
+        android:layout_centerHorizontal = "true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/money_borrowed"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        />
+
+        <EditText
+            android:id="@+id/PrincipleInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/interest_rate"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        />
+
+        <EditText
+            android:id="@+id/LoanPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/length_of_loan"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        />
+
+        <EditText
+            android:id="@+id/YearsBorrowed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loan_fees"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        />
+
+    </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/CalcButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calc_button"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            />
+
+
+
+    <TextView
+        android:id="@+id/totalInterest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_interest"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/totalInterestOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/monthlyPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/monthly_payment"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/monthlyPaymentOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textAppearance="@color/black"
+        android:layout_gravity="center"
+        />
+
+    <Button
+        android:id="@+id/ClearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_button"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

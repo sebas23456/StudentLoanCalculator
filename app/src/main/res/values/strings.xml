@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Student_Loan_Calculator</string>
+    <string name="in_app_title">Student Loan Calculator</string>
+    <string name="main_function">made to find your total interest and monthly payment</string>
+    <string name="money_borrowed">Please enter the principle of the loan below:</string>
+    <string name="interest_rate">Please enter the interest rate of the loan below:</string>
+    <string name="length_of_loan">Please enter the length of the loan in years:</string>
+    <string name="loan_fees">Five percent of the principle will be assumed as the loan fee.</string>
+
+    <string name="calc_button">Calculate</string>
+    <string name="clear_button">Clear</string>
+
+    <string name="total_interest">Your total interest in USD is:</string>
+    <string name="monthly_payment">Your monthly payment in USD is:</string>
+
+    <string name="clear"></string>
+
+
+
+</resources>
